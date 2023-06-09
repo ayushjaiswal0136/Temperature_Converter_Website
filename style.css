@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to top right, #124353 0%, #4f072b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 550px;
+    max-height: 500px;
+    background: #770b3abd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.501);
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.contains .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #9cb445 0%,
+    #3966d1 29%,
+    #06e760 67%,
+    #20c7ab 100%
+  );
+  margin-left: 3px;
+  margin-bottom: 15px;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.Temperature-icon{
+    font-size: 45px;
+    color: #fff;
+}
+
+
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px dotted wheat;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: rgba(21, 41, 48, 0.469);
+}
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #4d5964;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #20677f;
+    color: #030303;
+}
+
+.button button:hover{
+    background: #01212ac0;
+    color: #ffffff;
+}
